@@ -1,0 +1,142 @@
+.CardProductos {
+  background-color: #FFFBF0;
+  border: 1px solid #C9B87A;
+  border-top: 3px solid #D4AF37;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.CardProductos:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 28px rgba(13, 31, 45, 0.18);
+}
+
+.CardProductos img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 7px;
+  margin-bottom: 4px;
+  border: 2px solid #E8D9A0;
+}
+
+.CardProductos h2 {
+  font-size: 1.2rem;
+  color: #0D1F2D;
+  margin: 0;
+}
+
+.categoria-badge {
+  display: inline-block;
+  background-color: #0D1F2D;
+  color: #D4AF37;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 20px;
+  align-self: center;
+}
+
+.descripcion {
+  font-size: 0.9rem;
+  color: #3A2A1A;
+  line-height: 1.5;
+}
+
+.precio {
+  font-size: 1.3rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  color: #B8860B;
+}
+
+/* Botones */
+.card-botones {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.card-botones button {
+  flex: 1;
+  padding: 8px 0;
+  border: none;
+  border-radius: 7px;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.card-botones button:active {
+  transform: scale(0.97);
+}
+
+.btn-editar {
+  background-color: #1A3A50;
+  color: #D4AF37;
+}
+
+.btn-editar:hover {
+  background-color: #0D2A3D;
+}
+
+.btn-eliminar {
+  background-color: #2D0D0D;
+  color: #E8A0A0;
+}
+
+.btn-eliminar:hover {
+  background-color: #4A1010;
+}
+
+/* Formulario inline */
+.card-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-edit-form input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #C9B87A;
+  border-radius: 7px;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9rem;
+  background-color: #FFFDF5;
+  color: #1A0E05;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.card-edit-form input:focus {
+  border-color: #D4AF37;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+}
+
+.btn-guardar {
+  background-color: #0D1F2D;
+  color: #D4AF37;
+}
+
+.btn-guardar:hover {
+  background-color: #1A3A50;
+}
+
+.btn-cancelar {
+  background-color: #E8DFC0;
+  color: #3A2A1A;
+}
+
+.btn-cancelar:hover {
+  background-color: #D8CFA8;
+}

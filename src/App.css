@@ -1,0 +1,146 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ── Header ── */
+.app-header {
+  background-color: #0D1F2D;
+  background-image:
+    radial-gradient(ellipse at top, #1A3A50 0%, transparent 60%),
+    repeating-linear-gradient(
+      45deg,
+      rgba(212, 175, 55, 0.04) 0px,
+      rgba(212, 175, 55, 0.04) 1px,
+      transparent 1px,
+      transparent 10px
+    );
+  color: #F5EDD6;
+  text-align: center;
+  padding: 52px 24px 44px;
+  border-bottom: 3px solid #D4AF37;
+  position: relative;
+}
+
+.app-header__tagline {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  color: #D4AF37;
+  margin-bottom: 14px;
+  font-style: italic;
+}
+
+.app-header__title {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 700;
+  color: #F5EDD6;
+  line-height: 1.2;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.4);
+}
+
+.app-header__sub {
+  margin-top: 14px;
+  font-size: 0.9rem;
+  color: #A8C4D4;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* ── Main ── */
+.app-main {
+  flex: 1;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.seccion-titulo {
+  font-size: 1.6rem;
+  color: #0D1F2D;
+  margin-bottom: 24px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #D4AF37;
+  display: inline-block;
+}
+
+.seccion-formulario {
+  margin-bottom: 56px;
+}
+
+.lista-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 28px;
+}
+
+/* ── Stats ── */
+.catalogo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.catalogo-header .seccion-titulo {
+  margin-bottom: 0;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #0D1F2D;
+  border: 1px solid #D4AF37;
+  border-radius: 10px;
+  padding: 12px 24px;
+}
+
+.stats__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.stats__valor {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #D4AF37;
+}
+
+.stats__label {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #A8C4D4;
+}
+
+.stats__divider {
+  width: 1px;
+  height: 36px;
+  background-color: #D4AF37;
+  opacity: 0.4;
+}
+
+.sin-resultados {
+  color: #6B4226;
+  font-style: italic;
+  margin-top: 16px;
+}
+
+/* ── Footer ── */
+.app-footer {
+  background-color: #0D1F2D;
+  color: #A8C4D4;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  border-top: 2px solid #D4AF37;
+}
