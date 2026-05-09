@@ -61,12 +61,12 @@ function useProductos() {
     const subirImagen = async (archivo: File): Promise<string | null> => {
         const extension = archivo.name.split('.').pop();
         const nombreArchivo = `${Date.now()}.${extension}`;
-        const { data, error } = await supabase.storage.from('Productos').upload(nombreArchivo, archivo);
+        const { data, error } = await supabase.storage.from('productos').upload(nombreArchivo, archivo);
         if (error) {
             console.error('Error al subir imagen:', error);
             return null;
         }
-        const { data: urlData } = supabase.storage.from('Productos').getPublicUrl(data.path);
+        const { data: urlData } = supabase.storage.from('productos').getPublicUrl(data.path);
         return urlData.publicUrl;
     };
 
